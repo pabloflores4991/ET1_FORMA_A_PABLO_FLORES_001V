@@ -1,0 +1,88 @@
+{% extends "plantilla.html" %}
+{%load static%}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <body>
+        <br>
+        <h1>Proveedores</h1>
+        <br>
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Registro de proveedores</h4>
+                    <h3>Página registrada y certificada.</h3>
+                    <h3>100% Optimizada.</h3>
+                    <center>
+                      <img src="{%static 'img/calidad.JPG'%}" width="40" height="40">
+                    </center> 
+                    <hr>
+                  </div>
+            <div class="col-md-4">
+                <center>
+                <a href="{%url 'crearProvedor'%}"><img src="{%static 'img/provedor.png'%}" width="150" height="150"></a>
+                <a href="{%url 'crearProvedor'%}" class="link-dark"><h2> Registrar nuevo proveedor</h2></a>
+                
+                </center>
+            </div>
+            <div class="col-md-4">    
+                <h4>Fácil y sencillo</h4>
+                <h3 >Registro rápido</h3>
+                <br>
+                <center>
+                  <img src="{%static 'img/Despacho.jpg'%}" width="40" height="40">
+                </center>  
+                <hr>
+              </div>
+            </div>
+            <br>
+            <div class= "row" class="col-md-4"> 
+            </div>
+            <table  class="table" class="col-md-4">
+                
+                <thead class= "thead-dark" class="col-md-4">
+                    <tr>
+                        <th scope="col">Run</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Pais</th>
+                        <th scope="col">Ciudad</th>
+                        <th scope="col">Comuna</th>
+                        <th scope="col">Direccion</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Foto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {%for ve in datos2%}
+                        <tr>
+                            <td>{{ve.Run}}</td>
+                            <td>{{ve.NombreCompleto}}</td>
+                            <td>{{ve.Pais}}</td>
+                            <td>{{ve.Ciudad}}</td>
+                            <td>{{ve.Comuna}}</td>
+                            <td>{{ve.Direccion}}</td>
+                            <td>{{ve.Telefono}}</td>
+                            <td>{{ve.Email}}</td>
+                            <td>
+                                {%if ve.imagen %}
+                                <img  src="{{ve.imagen.url}}" width="70px" height="70px">
+                                {%endif%}
+                            </td>
+                        </tr>
+                    {%endfor%}
+    
+                </tbody>
+    
+            </table>
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+
+    </body>
+</html>
+{%endblock%}

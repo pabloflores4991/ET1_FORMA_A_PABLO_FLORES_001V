@@ -1,0 +1,399 @@
+
+
+h1{
+  color:#000000;
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 50px;
+}
+
+
+.titulo{
+  color: #080808;
+  text-align: left;
+}
+        
+
+h2{
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+h3{
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:16px;
+  text-align: center;
+}
+
+h4{
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size:40px;
+  
+}
+
+
+h6{
+    font-size: small;
+
+}
+h7{
+  color: #ad3a3a;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+body{
+    background-color: #ffffff;
+
+}
+
+.carousel-control-prev {
+    position: absolute;
+    top: 40%; 
+     z-index: 5;
+    display: inline-block;
+}
+ 
+ .carousel-control-next {
+    position: absolute;
+    top: 40%; 
+     z-index: 5;
+    display: inline-block;
+}
+
+
+.carousel-item {
+    
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+a {
+    height: 50%;
+    color: white;
+    padding: 15px;
+}
+
+footer {
+	background-color:#1A1A1A;
+	height: 50%;
+  color: white;
+  padding: 15px;
+}
+
+.main1 { 
+  display:flex;
+  margin:0 auto;
+}
+
+a img:hover {
+    color: #fff;
+}
+
+.tarjetas-somos {
+    display: block;
+    width: 50%;
+    height: 160px;
+    align-items: center;
+}
+
+
+
+#caja {
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+  }
+
+
+  
+
+.shop__thumb {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    -webkit-transition: border-color 0.1s, -webkit-box-shadow 0.1s;
+         -o-transition: border-color 0.1s, box-shadow 0.1s;
+            transition: border-color 0.1s, box-shadow 0.1s;
+  }
+
+  .shop__thumb:hover {
+    border-color: rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.07);
+  }
+  .shop__thumb > a {
+    color: #333333;
+  }
+  .shop__thumb > a:hover {
+    text-decoration: none;
+  }
+  .shop-thumb__img {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .shop-thumb__title {
+    font-weight: 600;
+  }
+  .shop-thumb__price {
+    color: #777777;
+  }
+  .shop-thumb-price_old {
+    text-decoration: line-through;
+  }
+  .shop-thumb-price_new {
+    
+    color: red;
+  }  
+
+
+
+
+
+  .pagination {
+    display: inline-block;
+    
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    
+  }
+  
+  .pagination a.active {
+    background-color: #f54c2f;
+    color: white;
+    border: 1px solid #f54c2f;
+    
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+  .video-responsive {
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 80.25%;
+    padding-top: 100px;
+    position: relative;
+    }
+  .video-responsive iframe, .video-responsive object, .video-responsive embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    }
+
+    h6.blocktext {
+      margin-left: 20%;
+      margin-right: 20%;
+      width: 80%
+  }
+
+  .h5{
+    color: black;
+  }
+
+
+  
+
+button {
+    clear: both;
+    float: left;
+    width: 300px;
+}
+
+
+
+
+
+/*  login-signin */
+
+.error-control {
+    border: 1px solid red;
+}
+
+label.error {
+    color: red;
+    width: 300px;
+    font-size: 0.8em;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+.login-snip{
+  width: 100%;
+  height: 1300px;
+  padding: 60px 70px 50px 50px;
+  background: rgba(217, 221, 221, 0.9);
+
+  
+}
+
+
+.login-snip .login,
+.login-snip .sign-up-form {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: all .4s linear;
+  
+}
+
+.login-snip .sign-in,
+.login-snip .sign-up,
+.login-space .group .check {
+  display: none
+}
+
+.login-snip .tab,
+.login-space .group .label,
+.login-space .group .button {
+  text-transform: uppercase
+}
+
+.login-snip .tab {
+  font-size: 25px;
+  margin-right: 5px;
+  padding-bottom: 0px;
+  margin: 0 15px 10px 0;
+
+  border-bottom: 2px solid transparent;
+  
+}
+
+.login-snip .sign-in:checked+.tab,
+.login-snip .sign-up:checked+.tab {
+  color: rgb(235, 37, 37);
+  border-color: #1161ee
+}
+
+.login-space {
+  min-height: 345px;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d
+}
+
+.login-space .group {
+  margin-bottom: 15px
+}
+
+
+.login-space .group .button {
+  width: 100%;
+  color: rgb(189, 58, 58);
+  display: block
+}
+
+.login-space .group .label,
+.login-space .group .input {
+  width: 100%;
+  color: rgb(32, 32, 32);
+  display: block
+}
+
+
+.login-space .group .input,
+.login-space .group .button {
+  border: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+  background: rgba(155, 30, 30, 0.1)
+}
+
+
+.login-space .group .button {
+  background: #1161ee
+}
+
+
+
+.login-snip .sign-in:checked+.tab+.sign-up+.tab+.login-space .login {
+  transform: rotate(0)
+}
+
+.login-snip .sign-up:checked+.tab+.login-space .sign-up-form {
+  transform: rotate(0)
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none
+}
+
+
+.foot {
+  text-align: center
+}
+
+
+
+
+::placeholder {
+  color: #444444
+}
+
+.error-control {
+  border: 1px solid red;
+}
+
+label.error {
+  color: red;
+  width: 300px;
+  font-size: 0.8em;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+
+.cd-popup {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+
+.cd-popup.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+.cd-popup-container {
+  transform: translateY(-40px);
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+
+.is-visible .cd-popup-container {
+  transform: translateY(0);
+}

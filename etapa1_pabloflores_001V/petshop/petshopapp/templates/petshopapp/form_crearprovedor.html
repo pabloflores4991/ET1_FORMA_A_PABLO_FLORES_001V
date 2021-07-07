@@ -1,0 +1,76 @@
+{% extends "plantilla.html" %}
+{%load static%}
+
+{% block content %}
+
+</head>
+<body>
+    <div class="container">
+        
+        <br>
+        <h1>Registrar proveedor</h1>
+        <div class="mx-auto " style="width: 550px"  >
+            
+                
+            <form method="POST" action="#" id="formulario" enctype="multipart/form-data" >
+                {%csrf_token%}
+                <br>
+                <div class="row">
+                    {{Provedor.Run.label}}
+                    {{Provedor.Run}}
+                </div>
+                <div class="row">
+                    {{Provedor.NombreCompleto.label}}
+                    {{Provedor.NombreCompleto}}
+                </div>
+                <div class="row">
+                    {{Provedor.Pais.label}}
+                    {{Provedor.Pais}}
+                </div>
+                <div class="row">
+                    {{Provedor.Ciudad.label}}
+                    {{Provedor.Ciudad}}
+                </div>
+                <div class="row">
+                    {{Provedor.Comuna.label}}
+                    {{Provedor.Comuna}}
+                </div>
+                <div class="row">
+                    {{Provedor.Direccion.label}}
+                    {{Provedor.Direccion}}
+                </div>
+                <div class="row">
+                    {{Provedor.Telefono.label}}
+                    {{Provedor.Telefono}}
+                </div>
+                <div class="row">
+                    {{Provedor.Email.label}}
+                    {{Provedor.Email}}
+                </div>
+                <div class="row">
+                    {{Provedor.Moneda.label}}
+                    {{Provedor.Moneda}}
+                </div>
+                <div class="row">
+                    {{Provedor.imagen.label}}
+                    {{Provedor.imagen}}
+                </div>
+                
+                <br>
+                <div class="d-flex justify-content-end">
+                    <input type="reset" value="Cancelar" class="btn btn-secondary" onclick="location.href='provedores'" >
+                    &nbsp;
+                    <input type="submit" class="btn btn-secondary" id="enviar" value="Confirmar"  >
+
+                    
+                    
+                </div>
+                <br>
+            </form>
+           </div>
+        </div>
+    </div>
+    <br>
+</body>
+</html>
+{%endblock%}

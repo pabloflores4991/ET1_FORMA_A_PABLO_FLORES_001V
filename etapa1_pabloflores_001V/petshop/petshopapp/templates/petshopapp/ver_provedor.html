@@ -1,0 +1,50 @@
+{% extends "plantilla.html" %}
+{%load static%}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="container">
+    <div class="row">
+            <h1>Listado de proveedores</h1>
+        </div>
+
+        <table class="table">
+            <thead class= "thead-dark"class="col-md-4" height="50">
+                
+                <tr>
+                    
+                    <th scope="col">Nombre Proveedor</th>
+                    <th scope="col">RUN</th>
+                    <th scope="col">Ciudad</th>
+                    <th scope="col">Contacto</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <a href="{% url 'crearProvedor' %}" class="btn btn-secondary"  >Registrar nuevo proveedor</a>
+                    
+                </tr>
+            
+            </thead >
+            <tbody  class="col-md-4">
+                {%for ve in datoprovedores%}
+                    <tr>
+                        <td>{{ve.NombreCompleto}}</td>
+                        <td>{{ve.Run}}</td>                      
+                        <td>{{ve.Ciudad}}</td>
+                        <td>{{ve.Telefono}}</td>
+                        <td><a href="{% url 'form_mod_provedor' ve.Run%}" class="btn btn-primary">Modificar  </a></td>
+                        <td><a href="{% url 'form_del_provedor' ve.Run%}" class="btn btn-danger">Eliminar </a></td>
+                        
+                    </tr>
+                {%endfor%}
+
+            </tbody>
+    </table>
+
+
+
+    </div>
+</body>
+</html>
+{%endblock%}

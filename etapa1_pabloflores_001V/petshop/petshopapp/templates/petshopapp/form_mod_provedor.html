@@ -1,0 +1,43 @@
+{% extends "plantilla.html" %}
+{%load static%}
+
+{% block content %}
+
+{%load static%}
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Modificando proveedores</h1>
+        </div>
+        <br>
+        <div class="row">
+            <div class="mx-auto " style="width: 550px"  >
+                <form method="POST" action="#" id="formulario" enctype="multipart/form-data" class="formulario-confirmar">
+                    {%csrf_token%}
+                    <div class="form-group">
+                        {{form.as_table}}
+                        <div class="d-flex justify-content-end">
+                            <input type="submit" class="btn btn-danger" id="modificar" value="Modificar">
+                            &nbsp;
+                            <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar" >
+                            
+        
+                            
+                            
+                        </div>
+                        <a href="{% url 'ver_provedor' %}" class="btn btn-secondary"  >Volver</a>
+                        
+                    </div>
+                   
+                    
+                </form>
+                
+              </div>
+            </div>
+    </div>
+    <br>
+</body>
+</html>
+{%endblock%}
